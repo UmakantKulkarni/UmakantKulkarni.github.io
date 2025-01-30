@@ -3,8 +3,8 @@ permalink: /
 title: "Umakant Kulkarni"
 author_profile: true
 redirect_from: 
-  - /about/
-  - /about.html
+  - about/
+  - about.html
 ---
 
 I am a fifth-year Ph.D. student in the Department of Computer Science at Purdue University. I am advised by Prof. [Sonia Fahmy](https://www.cs.purdue.edu/homes/fahmy/) at [PurNet Lab](https://gitlab.com/purnet-lab/purnet-lab.gitlab.io/-/wikis/home). Previously, I earned my master’s in Computer Systems Networking & Telecommunications from Northeastern University, Boston, MA.

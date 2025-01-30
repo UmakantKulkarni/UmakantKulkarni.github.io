@@ -21,7 +21,7 @@ main:
     url: /awards/
 
   - title: "CV"
-    url:  /files/CV.pdf
+    url: /files/CV.pdf
     
   # - title: "Guide"
   #   url: /markdown/
