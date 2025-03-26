@@ -38,7 +38,7 @@ You can also find my articles on <a href="{{site.author.googlescholar}}">my Goog
 
 [Maestro: QoE-Aware Dynamic Resource Allocation in Wi-Fi Networks](https://doi.org/10.1145/3709371)  
 **Umakant Kulkarni**, Khaled Diab, Lianjie Cao, Faraz Ahmed, Shivang Aggarwal, Puneet Sharma, Sonia Fahmy.  
-Proc. ACM Netw. 3, CoNEXT1, Article 4 (March 2025), 24 pages.  
+Proceedings of the ACM on Networking, Volume 3, Issue CoNEXT1, Article 4, 24 pp., March 2025  
 
 [Securing the Cloud-Native 5G Control Plane](https://ieeexplore.ieee.org/abstract/document/10774032)  
 **Umakant Kulkarni**, Sonia Fahmy.  
