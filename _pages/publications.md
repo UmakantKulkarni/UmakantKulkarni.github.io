@@ -36,7 +36,7 @@ You can also find my articles on <a href="{{site.author.googlescholar}}">my Goog
 {% endif %}
 -->
 
-Janus: A Dual-Mask Attention Transformer for Log-based Anomaly Detection in Cellular Networks  
+Janus: A Dual-Mask Attention Transformer for Log-based Anomaly Detection in Cellular Networks.   
 **Umakant Kulkarni**, Sonia Fahmy.  
 Submitted, SIGMETRICS, October 2025
 
