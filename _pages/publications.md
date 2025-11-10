@@ -36,7 +36,15 @@ You can also find my articles on <a href="{{site.author.googlescholar}}">my Goog
 {% endif %}
 -->
 
-[Maestro: QoE-Aware Dynamic Resource Allocation in Wi-Fi Networks](https://doi.org/10.1145/3709371)  
+[Janus: A Dual-Mask Attention Transformer for Log-based Anomaly Detection in Cellular Networks]  
+**Umakant Kulkarni**, Sonia Fahmy.  
+Submitted, SIGMETRICS, October 2025
+
+[RUN: A Case for Cross-Layer Networked Virtual Reality](https://dl.acm.org/doi/10.1145/3746027.3754800)  
+Yufeng Chen, **Umakant Kulkarni**, Voicu Popescu, Sonia Fahmy
+Proceedings of the 33rd ACM International Conference on Multimedia (MM '25), 10 pp., October 2025.
+
+[Maestro: QoE-Aware Dynamic Resource Allocation in Wi-Fi Networks](https://dl.acm.org/doi/10.1145/3709371)  
 **Umakant Kulkarni**, Khaled Diab, Lianjie Cao, Faraz Ahmed, Shivang Aggarwal, Puneet Sharma, Sonia Fahmy.  
 Proceedings of the ACM on Networking, Volume 3, Issue CoNEXT1, Article 4, 24 pp., March 2025  
 
