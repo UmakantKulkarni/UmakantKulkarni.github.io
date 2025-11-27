@@ -1,0 +1,302 @@
+---
+layout: single
+title: "Maestro | QoE-Aware Dynamic Resource Allocation in Wi-Fi"
+permalink: /research/maestro/
+author_profile: true
+---
+
+{% include base_path %}
+
+<style>
+  .maestro-hero {
+    background: linear-gradient(135deg, #0c243a 0%, #0b1b2d 55%, #0c243a 100%);
+    color: #eef6ff;
+    padding: 40px 28px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 26px;
+    box-shadow: 0 20px 36px rgba(6, 16, 30, 0.4);
+  }
+  .maestro-hero::after {
+    content: "";
+    position: absolute;
+    inset: -80px;
+    background:
+      radial-gradient(circle at 18% 20%, rgba(47, 164, 255, 0.32), transparent 24%),
+      radial-gradient(circle at 82% 10%, rgba(26, 199, 165, 0.28), transparent 22%),
+      radial-gradient(circle at 60% 80%, rgba(255, 255, 255, 0.05), transparent 26%),
+      linear-gradient(120deg, rgba(47, 164, 255, 0.08) 0%, transparent 30%, rgba(26, 199, 165, 0.1) 70%, transparent 100%);
+    pointer-events: none;
+  }
+  .maestro-hero h1 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+    letter-spacing: 0.01em;
+    position: relative;
+    z-index: 1;
+  }
+  .maestro-hero p {
+    margin: 0 0 12px;
+    max-width: 880px;
+    color: #d8e6f5;
+    position: relative;
+    z-index: 1;
+  }
+  .maestro-pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+    position: relative;
+    z-index: 1;
+  }
+  .maestro-pill {
+    background: rgba(255, 255, 255, 0.14);
+    color: #f4fbff;
+    padding: 8px 13px;
+    border-radius: 999px;
+    font-size: 0.92rem;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+  }
+  .panel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin: 14px 0 24px;
+  }
+  .panel {
+    background: #0f1926;
+    color: #e8f2ff;
+    padding: 16px 16px 18px;
+    border-radius: 12px;
+    border: 1px solid #1f2a38;
+    box-shadow: 0 10px 22px rgba(7, 17, 32, 0.28);
+    position: relative;
+    overflow: hidden;
+  }
+  .panel::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 16% 18%, rgba(47, 164, 255, 0.16), transparent 32%), radial-gradient(circle at 82% 18%, rgba(26, 199, 165, 0.16), transparent 32%);
+    pointer-events: none;
+  }
+  .panel h3 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+  }
+  .panel p {
+    margin: 0;
+    color: #cddff3;
+    line-height: 1.45;
+  }
+  .list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+  .list-card {
+    background: #0c1420;
+    border: 1px solid #1d3147;
+    border-radius: 12px;
+    padding: 14px 14px 12px;
+    box-shadow: 0 10px 18px rgba(5, 12, 24, 0.24);
+    position: relative;
+    overflow: hidden;
+  }
+  .list-card h4 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    color: #e8f3ff;
+  }
+  .list-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 18% 18%, rgba(47, 164, 255, 0.12), transparent 32%), radial-gradient(circle at 82% 12%, rgba(26, 199, 165, 0.12), transparent 30%);
+    pointer-events: none;
+  }
+  .list-card ul {
+    margin: 0;
+    padding-left: 18px;
+    color: #c6d8ee;
+  }
+  .list-card li {
+    margin-bottom: 6px;
+  }
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 16px 0 6px;
+  }
+  .cta-row a {
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .cta-row a.primary {
+    background: linear-gradient(135deg, #2fa4ff 0%, #1ac7a5 100%);
+    color: #041524;
+  }
+  .cta-row a.secondary {
+    background: transparent;
+    color: #e4f4ff;
+    border-color: #2fa4ff;
+  }
+  .cta-row a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(31, 75, 110, 0.32);
+  }
+  .section-title {
+    font-size: 1.15rem;
+    margin: 18px 0 10px;
+    color: #0d2034;
+  }
+  .section-title.alt {
+    color: #e9f4ff;
+  }
+  .criteria {
+    background: #0f1824;
+    color: #e8f2ff;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #1e3044;
+    box-shadow: 0 12px 20px rgba(5, 15, 30, 0.28);
+    margin-bottom: 14px;
+  }
+  .criteria ul {
+    margin: 8px 0 0;
+    padding-left: 18px;
+    color: #c6d8ee;
+  }
+  .criteria li {
+    margin-bottom: 6px;
+  }
+  @media (max-width: 640px) {
+    .maestro-hero {
+      padding: 28px 20px;
+    }
+  }
+  /* Decorative orbit for hero */
+  .orbit {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border: 1px dashed rgba(255, 255, 255, 0.18);
+    border-radius: 50%;
+    top: -120px;
+    right: -100px;
+    opacity: 0.6;
+  }
+  .orbit::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(135deg, #2fa4ff, #1ac7a5);
+    border-radius: 50%;
+    top: 40%;
+    left: -6px;
+    box-shadow: 0 0 18px rgba(47, 164, 255, 0.8);
+  }
+</style>
+
+<section class="maestro-hero">
+  <div class="orbit" aria-hidden="true"></div>
+  <h1>Maestro: QoE-Aware Dynamic Resource Allocation in Wi-Fi Networks</h1>
+  <p>Reinforcement learning resource manager that maximizes user QoE and QoE fairness without modifying clients, pairing telemetry-driven QoE estimation with flow-level access category and priority control.</p>
+  <div class="maestro-pill-row">
+    <span class="maestro-pill">Telemetry-only QoE estimation</span>
+    <span class="maestro-pill">DDQN multi-agent RL</span>
+    <span class="maestro-pill">Enterprise Wi-Fi 6 testbed</span>
+  </div>
+</section>
+
+<div class="panel-grid">
+  <div class="panel">
+    <h3>The challenge</h3>
+    <p>QoS-tuned Wi-Fi policies miss user experience; static mappings (e.g., WMM) ignore changing load, and prior dynamic policies can require client-side hooks to see QoE.</p>
+  </div>
+  <div class="panel">
+    <h3>Maestro approach</h3>
+    <p>Formulates Wi-Fi resource allocation as a PO-MDP. LSTM QoE estimators (per application class) consume only controller telemetry; a DDQN multi-agent policy jointly selects access category (BE/VI/VO) and traffic priority per flow.</p>
+  </div>
+  <div class="panel">
+    <h3>Evidence</h3>
+    <p>Enterprise Wi-Fi 6 testbed (Aruba controller + AP, Real clients and servers) running video streaming, video conferencing, file transfer, and audio conferencing. Maestro lifts QoE up to 25× and fairness 78% over WMM, reaches up to 69% QoE over QFlow, and improves popular OTT apps by 12% on average (up to 29%).</p>
+    <div class="cta-row" style="margin-top: 12px;">
+      <a class="primary" href="https://dl.acm.org/doi/abs/10.1145/3709371" target="_blank" rel="noopener">Maestro paper (PDF)</a>
+    </div>
+  </div>
+</div>
+
+<h2 class="section-title">Design highlights</h2>
+<div class="list-grid">
+  <div class="list-card">
+    <h4>Telemetry → QoE estimator</h4>
+    <ul>
+      <li>Uses only WLAN controller telemetry (257 features; 4-second sampling) to keep clients and apps untouched.</li>
+      <li>LSTM with three stacked layers (256/128/64 hidden units) trained for 50 epochs using MSE + Adam.</li>
+      <li>Separate estimators for video streaming, video conferencing, file transfer, and audio conferencing.</li>
+    </ul>
+  </div>
+  <div class="list-card">
+    <h4>RL policy (DDQN, multi-agent)</h4>
+    <ul>
+      <li>One agent per application class; state combines estimated QoE and telemetry.</li>
+      <li>Action: assign access category (BE/VI/VO) + traffic priority (high/low) per flow—no static binding to app class.</li>
+      <li>Replay buffer + controlled exploration for sample efficiency in high-dimensional Wi-Fi state/action space.</li>
+    </ul>
+  </div>
+  <div class="list-card">
+    <h4>Simulation environment</h4>
+    <ul>
+      <li>Built from a “knowledge base” of 402 hours of telemetry+QoE (362K data points) across 15 Wi-Fi configurations.</li>
+      <li>Starts RL agents from random states and evaluates actions using the knowledge base to avoid costly live training.</li>
+      <li>Maintains alignment between telemetry windows and QoE via 4-second intervals.</li>
+    </ul>
+  </div>
+  <div class="list-card">
+    <h4>Controller integration path</h4>
+    <ul>
+      <li>WLAN controller flow classifier tags application class; Maestro ingests telemetry and estimates QoE.</li>
+      <li>Policy agent sends access category + priority to AP configuration handler; applied without client changes.</li>
+      <li>Targets elephant flows with sustained traffic.</li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="section-title">Evaluation snapshot</h2>
+<div class="list-grid">
+  <div class="list-card">
+    <h4>QoE & fairness vs. WMM</h4>
+    <ul>
+      <li>Up to 25× higher QoE and 78% higher QoE fairness across mixed workloads in the Wi-Fi 6 testbed.</li>
+      <li>Popular OTT apps (Netflix, Zoom) gain 12% on average and up to 29% QoE improvement.</li>
+    </ul>
+  </div>
+  <div class="list-card">
+    <h4>Against QFlow</h4>
+    <ul>
+      <li>Matches or exceeds QoE without requiring client-side instrumentation; up to 69% QoE lift reported.</li>
+    </ul>
+  </div>
+  <div class="list-card">
+    <h4>Training efficiency</h4>
+    <ul>
+      <li>Simulation harness accelerates DDQN training using the knowledge base instead of repeated on-hardware trials.</li>
+      <li>Validation losses stabilize after ~30 epochs; residuals centered near zero on test data (per paper Figure 2).</li>
+    </ul>
+  </div>
+</div>
+
+<div class="cta-row">
+  <a class="primary" href="https://dl.acm.org/doi/abs/10.1145/3709371" target="_blank" rel="noopener">Read the Maestro paper</a>
+  <a class="secondary" href="{{ base_path }}/research/">Back to Research</a>
+</div>
