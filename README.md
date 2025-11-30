@@ -45,6 +45,11 @@ If you are running on Linux it may be necessary to install some additional depen
 
 Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
 
+Cleanup:
+```bash
+rm Gemfile.lock
+```
+
 Start by build the container:
 
 ```bash
