@@ -36,9 +36,9 @@ You can also find my articles on <a href="{{site.author.googlescholar}}">my Goog
 {% endif %}
 -->
 
-Janus: A Dual-Mask Attention Transformer for Log-based Anomaly Detection in Cellular Networks.   
+[Janus: A Dual-Mask Attention Transformer for Log-based Anomaly Detection in Cellular Networks.](https://doi.org/10.1145/3788096)  
 **Umakant Kulkarni**, Sonia Fahmy.  
-Submitted, October 2025
+Proc. ACM Meas. Anal. Comput. Syst. 10, 1, Article 14, (SIGMETRICS'26), 36pp., March 2026.
 
 [RUN: A Case for Cross-Layer Networked Virtual Reality](https://dl.acm.org/doi/10.1145/3746027.3754800)  
 Yufeng Chen, **Umakant Kulkarni**, Voicu Popescu, Sonia Fahmy.  
