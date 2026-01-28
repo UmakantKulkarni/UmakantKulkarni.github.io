@@ -11,7 +11,7 @@ author_profile: true
 
 - *USENIX NDSI 2026* — Artifact Evaluation Committee
 - *ACM SIGCOMM 2025* — Artifact Evaluation Committee
-- *ACM Internet Measurement Conference (IMC) 2025* — Shadow Technical Program Committee
+- *ACM IMC 2025* — Shadow Technical Program Committee
 
 ## Ad hoc Journal Reviews
 

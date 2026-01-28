@@ -11,20 +11,43 @@ author_profile: true
     h1.page__title {
         display: none;
     }
+
+    .experience__org {
+        color: #004085;
+    }
+
+    .experience__location {
+        font-style: italic;
+        color: #555;
+    }
+
+    .experience__dates {
+        float: right;
+        color: #666;
+    }
+
+    html[data-theme="dark"] .experience__org {
+        color: var(--global-base-color);
+    }
+
+    html[data-theme="dark"] .experience__location,
+    html[data-theme="dark"] .experience__dates {
+        color: var(--global-fig-caption-color);
+    }
 </style>
 
 <h1 style="text-align:center; font-size: 2rem; font-weight: bold;">Professional Experience</h1>
 
 <div style="margin-top: 30px;">
-    <h2 style="color: #004085;">Nokia Bell Labs</h2>
-    <p style="font-style: italic; color: #555;">New Providence, NJ, USA</p>
-    <p><strong>Research Scientist</strong> <span style="float: right; color: #666;">Jan 2026 – Present</span></p>
+    <h2 class="experience__org">Nokia Bell Labs</h2>
+    <p class="experience__location">New Providence, NJ, USA</p>
+    <p><strong>Research Scientist</strong> <span class="experience__dates">Jan 2026 – Present</span></p>
 </div>
 
 <div style="margin-top: 30px;">
-    <h2 style="color: #004085;">Affirmed Networks/Microsoft</h2>
-    <p style="font-style: italic; color: #555;">Acton, MA, USA</p>
-    <p><strong>Principal Software Engineer</strong> <span style="float: right; color: #666;">Jun 2017 – Dec 2020</span></p>
+    <h2 class="experience__org">Affirmed Networks/Microsoft</h2>
+    <p class="experience__location">Acton, MA, USA</p>
+    <p><strong>Principal Software Engineer</strong> <span class="experience__dates">Jun 2017 – Dec 2020</span></p>
 </div>
 
 <!-- <div style="margin-top: 20px;">
@@ -38,25 +61,25 @@ author_profile: true
 <h1 style="text-align:center; font-size: 2rem; font-weight: bold;">Internships</h1>
 
 <div style="margin-top: 30px;">
-    <h2 style="color: #004085;">InterDigital</h2>
-    <p style="font-style: italic; color: #555;">Conshohocken, PA, USA</p>
-    <p><strong>Research Intern</strong> <span style="float: right; color: #666;">May 2025 – Aug 2025</span></p>
+    <h2 class="experience__org">InterDigital</h2>
+    <p class="experience__location">Conshohocken, PA, USA</p>
+    <p><strong>Research Intern</strong> <span class="experience__dates">May 2025 – Aug 2025</span></p>
 </div>
 
 <div style="margin-top: 30px;">
-    <h2 style="color: #004085;">Hewlett Packard Enterprise</h2>
-    <p style="font-style: italic; color: #555;">Milpitas, CA, USA</p>
-    <p><strong>Research Associate Intern</strong> <span style="float: right; color: #666;">May 2022 – Dec 2023</span></p>
+    <h2 class="experience__org">Hewlett Packard Enterprise</h2>
+    <p class="experience__location">Milpitas, CA, USA</p>
+    <p><strong>Research Associate Intern</strong> <span class="experience__dates">May 2022 – Dec 2023</span></p>
 </div>
 
 <div style="margin-top: 20px;">
-    <h2 style="color: #004085;">Affirmed Networks, Inc.</h2>
-    <p style="font-style: italic; color: #555;">Acton, MA, USA</p>
-    <p><strong>SQA Automation Intern</strong> <span style="float: right; color: #666;">May 2016 – Jan 2017</span></p>
+    <h2 class="experience__org">Affirmed Networks, Inc.</h2>
+    <p class="experience__location">Acton, MA, USA</p>
+    <p><strong>SQA Automation Intern</strong> <span class="experience__dates">May 2016 – Jan 2017</span></p>
 </div>
 
 <div style="margin-top: 20px;">
-    <h2 style="color: #004085;">Thuse Elektronics Pvt. Ltd.</h2>
-    <p style="font-style: italic; color: #555;">Pune, India</p>
-    <p><strong>Intern</strong> <span style="float: right; color: #666;">Nov 2013 – Dec 2013</span></p>
+    <h2 class="experience__org">Thuse Elektronics Pvt. Ltd.</h2>
+    <p class="experience__location">Pune, India</p>
+    <p><strong>Intern</strong> <span class="experience__dates">Nov 2013 – Dec 2013</span></p>
 </div>
