@@ -22,6 +22,6 @@ My research sits at the intersection of cellular networks, distributed systems, 
 ### Research Interests  
 
 • Cellular Networks • Distributed Systems • Network Security  
-• AI/ML for Network Automation • Wi-Fi Networks • QoE 
+• AI/ML for Network Automation • Wi-Fi Networks • QoE   
 • Resource Management, Orchestration, Autoscaling  
  
