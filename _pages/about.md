@@ -16,7 +16,7 @@ Before joining Purdue, I worked as a Software Engineer at Microsoft, focusing on
 Research
 ======
 
-My research sits at the intersection of cellular networks and distributed systems, with a focus on integrating modern AI-driven techniques into operator networks. I build practical methods for configuration, resource management, orchestration, and elastic scaling to improve the performance and reliability of cloud-native mobile core systems. I am especially interested in how learning-based approaches, including LLMs and other ML techniques, can make cellular networks more efficient, robust, and easier to operate at scale.
+My research sits at the intersection of cellular networks, distributed systems, and network security with a focus on integrating modern AI-driven techniques into operator networks. I build practical methods for configuration, resource management, orchestration, and elastic scaling to improve the performance and reliability of cloud-native mobile core systems. I am especially interested in how learning-based approaches, including LLMs and other ML techniques, can make cellular networks more efficient, robust, and easier to operate at scale.
 
 ---
 ### Research Interests  
