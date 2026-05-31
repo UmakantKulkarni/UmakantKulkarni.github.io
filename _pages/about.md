@@ -7,7 +7,7 @@ redirect_from:
   - about.html
 ---
 
-I am a Research Scientist in the Mobile Network Systems Department at Nokia Bell Labs. I graduated with a Ph.D. in Computer Science from Purdue University, advised by Prof. [Sonia Fahmy](https://www.cs.purdue.edu/homes/fahmy/) at [PurNet Lab](https://gitlab.com/purnet-lab/purnet-lab.gitlab.io/-/wikis/home). My [dissertation](https://doi.org/10.25394/PGS.30752984) developed operator-centric strategies to enhance performance and reliability of cloud-native 5G core and Wi-Fi access networks. 
+I am a Research Scientist in the Mobile Network Systems Department at Nokia Bell Labs. I received my Ph.D. in Computer Science from Purdue University, where I was advised by Prof. [Sonia Fahmy](https://www.cs.purdue.edu/homes/fahmy/) at [PurNet Lab](https://gitlab.com/purnet-lab/purnet-lab.gitlab.io/-/wikis/home). My [dissertation](https://doi.org/10.25394/PGS.30752984) developed operator-centric strategies to enhance performance and reliability of cloud-native 5G core and Wi-Fi access networks. 
 
 Before joining Purdue, I worked as a Software Engineer at Microsoft, focusing on software development, architecture designing and building automation infrastructure for Affirmed Networks' cloud-native 5G mobile core solution. Prior to that, I completed my master’s in Computer Systems Networking & Telecommunications from Northeastern University, Boston, MA, USA.
 
