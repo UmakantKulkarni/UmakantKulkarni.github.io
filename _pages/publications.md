@@ -13,6 +13,14 @@ You can also find my articles on <a href="{{site.author.googlescholar}}">my Goog
 
 {% include base_path %}
 
+## Patents
+
+[QoE-aware Dynamic Resource Allocation](https://patents.google.com/patent/US20260095414A1/en)
+Shivang Aggarwal, **Umakant Kulkarni**, Khaled Diab, Lianjie Cao, Faraz Ahmed, Puneet Sharma.  
+Published in USA, Germany and China, April 2026.
+
+## Publications
+
 <!-- New style rendering if publication categories are defined -->
 <!--
 {% if site.publication_category %}
