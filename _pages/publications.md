@@ -19,7 +19,7 @@ You can also find my articles on <a href="{{site.author.googlescholar}}">my Goog
 Shivang Aggarwal, **Umakant Kulkarni**, Khaled Diab, Lianjie Cao, Faraz Ahmed, Puneet Sharma.  
 Published in USA, Germany and China, April 2026.
 
-## Publications
+## Papers
 
 <!-- New style rendering if publication categories are defined -->
 <!--
