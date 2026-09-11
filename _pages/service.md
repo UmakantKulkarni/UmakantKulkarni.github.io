@@ -9,6 +9,10 @@ author_profile: true
 
 ## Conferences
 
+- *ACM SIGCOMM 2026* — Artifact Evaluation Committee
+- *IEEE INFOCOM 2027* — Technical Program Committee
+- *PACT 2026* — Artifact Evaluation Committee
+- *USENIX NDSI 2027* — Artifact Evaluation Committee
 - *ACM CoNEXT 2026* — Artifact Evaluation Committee
 - *ACM CAIS 2026* — Artifact Evaluation Committee
 - *USENIX NDSI 2026* — Artifact Evaluation Committee
