@@ -19,7 +19,7 @@ author_profile: true
 - *ACM SIGCOMM 2025* — Artifact Evaluation Committee
 - *ACM IMC 2025* — Shadow Technical Program Committee
 
-## Ad hoc Journal Reviews
+## Journals
 
 - *IEEE Internet Computing*
 - *IEEE Transactions on Networking*
