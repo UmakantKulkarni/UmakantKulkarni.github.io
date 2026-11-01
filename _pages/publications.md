@@ -44,6 +44,14 @@ Published in USA, Germany and China, April 2026.
 {% endif %}
 -->
 
+Modeling Latency of Split Autoregressive Decoding in Cellular Edge Systems
+**Umakant Kulkarni**, Kevin Di Lallo, Chonggang Wang, Robert Gazda, Sonia Fahmy.
+Proc. of EI Workshop at ACM/IEEE Symposium on Edge Computing (SEC '26), 8pp., October 2026.
+
+Elastic and Energy-Efficient Management of Mobile Core Control Plane with In-Process WASM Workers
+Masayuki Kurata, Kyoshiro Muramatsu, **Umakant Kulkarni**, Van Quan Pham, Ahan Kak, Nakjung Choi, Masaki Suzuki.
+IEEE International Conference on Network and Service Management (CNSM), 9 pp., October 2026.
+
 [Janus: A Dual-Mask Attention Transformer for Log-based Anomaly Detection in Cellular Networks.](https://doi.org/10.1145/3788096)  
 **Umakant Kulkarni**, Sonia Fahmy.  
 Proc. ACM Meas. Anal. Comput. Syst. 10, 1, Article 14, (SIGMETRICS'26), 36pp., March 2026.
@@ -54,7 +62,7 @@ Proceedings of the 33rd ACM International Conference on Multimedia (MM '25), 10 
 
 [Maestro: QoE-Aware Dynamic Resource Allocation in Wi-Fi Networks](https://dl.acm.org/doi/10.1145/3709371)  
 **Umakant Kulkarni**, Khaled Diab, Lianjie Cao, Faraz Ahmed, Shivang Aggarwal, Puneet Sharma, Sonia Fahmy.  
-Proceedings of the ACM on Networking, Volume 3, Issue CoNEXT1, Article 4, 24 pp., March 2025  
+Proceedings of the ACM on Networking, Volume 3, Issue CoNEXT1, Article 4, 24 pp., March 2025.  
 
 [Securing the Cloud-Native 5G Control Plane](https://ieeexplore.ieee.org/abstract/document/10774032)  
 **Umakant Kulkarni**, Sonia Fahmy.  
