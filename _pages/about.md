@@ -12,6 +12,7 @@ I am a Senior Staff Researcher in the Network Security organization at Palo Alto
 Previously, I was a Research Scientist at Nokia Bell Labs, where I worked on distributed architectures for next-generation mobile core networks. I received my Ph.D. in Computer Science from Purdue University, where I was advised by Prof. [Sonia Fahmy](https://www.cs.purdue.edu/homes/fahmy/) at [PurNet Lab](https://gitlab.com/purnet-lab/purnet-lab.gitlab.io/-/wikis/home). My doctoral [dissertation](https://doi.org/10.25394/PGS.30752984) explored zero-trust security, network anomaly detection, and the performance and reliability of cloud-native cellular and Wi-Fi networks.
 
 Before joining Purdue, I worked at Microsoft/Affirmed Networks on cloud-native mobile core software, network protocols, and distributed network functions. I also hold a master's degree in Computer Systems Networking from Northeastern University.
+
 <!-- 
 I am a Research Scientist in the Mobile Network Systems Department at Nokia Bell Labs. I received my Ph.D. in Computer Science from Purdue University, where I was advised by Prof. [Sonia Fahmy](https://www.cs.purdue.edu/homes/fahmy/) at [PurNet Lab](https://gitlab.com/purnet-lab/purnet-lab.gitlab.io/-/wikis/home). My [dissertation](https://doi.org/10.25394/PGS.30752984) developed operator-centric strategies to enhance performance and reliability of cloud-native 5G core and Wi-Fi access networks. 
 
