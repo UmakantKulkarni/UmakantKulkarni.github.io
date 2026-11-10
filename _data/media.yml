@@ -1,0 +1,29 @@
+- title: "Maestro: Breaking the WiFi Status Quo with AI-Powered Quality of Experience Management"
+  publisher: HPE Labs
+  date: "2025-08-18"
+  date_label: August 18, 2025
+  url: https://community.hpe.com/t5/advancing-life-work/maestro-breaking-the-wifi-status-quo-with-ai-powered-quality-of/ba-p/7254394
+  image: /images/media/maestro.jpg
+  image_alt: Cityscape featured in the HPE Labs article about Maestro
+  image_credit: HPE Labs
+  excerpt: "Much of Maestro’s research was shaped by Umakant Kulkarni, a Ph.D. student from Purdue University who started the project during his internship at HPE Labs."
+
+- title: "Securing 5G for Military Operations: Purdue is part of NSF’s Convergence Accelerator Track G award, Phase II"
+  publisher: Purdue Computer Science
+  date: "2023-10-30"
+  date_label: October 30, 2023
+  url: https://cs.purdue.edu/news/articles/2023/securing-5g-for-military-operations.html
+  image: /images/media/slicure5g.jpg
+  image_alt: Umakant Kulkarni presenting his Slicure5G research poster at NSDI 2023
+  image_credit: Purdue University
+  excerpt: "Professor Sonia Fahmy and PhD student Umakant Kulkarni presented research related to ZTX at the 20th USENIX Symposium on Networked Systems Design and Implementation (NSDI ‘23)."
+
+- title: Hewlett Packard Labs interns win again
+  publisher: HPE Labs
+  date: "2022-09-27"
+  date_label: September 27, 2022
+  url: https://community.hpe.com/t5/advancing-life-work/hewlett-packard-labs-interns-win-again/ba-p/7174692
+  image: /images/media/hpe-interns.jpg
+  image_alt: Research group photograph featured in the HPE Labs internship awards article
+  image_credit: HPE Labs
+  excerpt: "Kulkarni’s project focuses on improving the quality of internet media traffic for end-users over WiFi."
