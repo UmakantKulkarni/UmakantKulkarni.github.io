@@ -1,0 +1,122 @@
+.media-intro {
+  max-width: 44rem;
+  margin: 0 0 1.8rem;
+  color: var(--global-text-color);
+}
+
+.media-list {
+  display: grid;
+  gap: 1.3rem;
+}
+
+.media-card {
+  display: grid;
+  grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 12px;
+  background: var(--global-bg-color);
+}
+
+.page__content .media-card__preview {
+  display: block;
+  margin: 0;
+  min-width: 0;
+}
+
+.media-card__preview a {
+  display: block;
+}
+
+.media-card__preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 32 / 21;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.media-card__preview figcaption {
+  margin: 0.5rem 0 0;
+  font-size: 0.65rem;
+  color: var(--global-text-color);
+}
+
+.media-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.8rem;
+  font-size: 0.7rem;
+  color: var(--global-text-color);
+}
+
+.media-card__publisher {
+  font-weight: 700;
+  color: var(--global-text-color);
+}
+
+.page__content .media-card h2 {
+  margin: 0.5rem 0 0.8rem;
+  padding: 0;
+  border: 0;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.media-card h2 a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.media-card h2 a:hover {
+  color: var(--global-link-color-hover);
+  text-decoration: underline;
+}
+
+.page__content .media-card blockquote {
+  margin: 0 0 0.9rem;
+  padding: 0 0 0 0.85rem;
+  border-left: 3px solid var(--global-link-color);
+  font-size: 0.8rem;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.page__content .media-card blockquote p {
+  margin: 0 0 0.25rem;
+}
+
+.media-card blockquote cite {
+  font-size: 0.7rem;
+  font-style: normal;
+  color: var(--global-text-color);
+}
+
+.media-card__read {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #21667d;
+}
+
+html[data-theme="dark"] .media-card__read {
+  color: #8dd5e8;
+}
+
+.media-card a:focus-visible {
+  outline: 2px solid var(--global-link-color);
+  outline-offset: 4px;
+}
+
+@media (max-width: 640px) {
+  .media-card {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .media-card__preview img {
+    max-height: 240px;
+  }
+}

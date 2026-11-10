@@ -1,0 +1,37 @@
+---
+layout: single
+title: "Media"
+permalink: /media/
+author_profile: true
+excerpt: "Selected coverage of Umakant Kulkarni’s research and recognition."
+---
+
+{% include base_path %}
+<link rel="stylesheet" href="{{ base_path }}/assets/css/media.css">
+
+<p class="media-intro">Selected coverage of my research and recognition, from Wi-Fi quality of experience to secure 5G networks.</p>
+
+<div class="media-list">
+  {% for item in site.data.media %}
+  <article class="media-card" aria-labelledby="media-title-{{ forloop.index }}">
+    <figure class="media-card__preview">
+      <a href="{{ item.url }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ base_path }}{{ item.image }}" alt="{{ item.image_alt }}" width="640" height="420" loading="lazy">
+      </a>
+      <figcaption>Image: {{ item.image_credit }}</figcaption>
+    </figure>
+    <div class="media-card__body">
+      <div class="media-card__meta">
+        <span class="media-card__publisher">{{ item.publisher }}</span>
+        <time datetime="{{ item.date }}">{{ item.date_label }}</time>
+      </div>
+      <h2 id="media-title-{{ forloop.index }}"><a href="{{ item.url }}">{{ item.title }}</a></h2>
+      <blockquote cite="{{ item.url }}">
+        <p>“{{ item.excerpt }}”</p>
+        <cite>{{ item.publisher }}</cite>
+      </blockquote>
+      <a class="media-card__read" href="{{ item.url }}" aria-label="Read article: {{ item.title | escape }}">Read article <svg aria-hidden="true" width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12 12 4M4 4h8v8"/></svg></a>
+    </div>
+  </article>
+  {% endfor %}
+</div>
