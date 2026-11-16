@@ -120,3 +120,17 @@ html[data-theme="dark"] .media-card__read {
     max-height: 240px;
   }
 }
+
+.media-card__body { min-width: 0; overflow-wrap: anywhere; }
+.page__content .media-card__highlight {
+  margin: 0 0 0.9rem;
+  padding-left: 0.85rem;
+  border-left: 3px solid var(--global-link-color);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.page__content .media-card__related { margin: 0.8rem 0 0; font-size: 0.75rem; }
+.media-card[id] { scroll-margin-top: 5rem; }
+@media (max-width: 640px) { .media-card__preview--empty { display: none; } }
+
+.media-card__preview img.media-card__image--contain { object-fit: contain; }

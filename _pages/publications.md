@@ -44,11 +44,11 @@ Published in USA, Germany and China, April 2026.
 {% endif %}
 -->
 
-[Modeling Latency of Split Autoregressive Decoding in Cellular Edge Systems](https://scholar.google.com/citations?hl=en&user=1v3d0A0AAAAJ)    
+[Modeling Latency of Split Autoregressive Decoding in Cellular Edge Systems](https://acm-ieee-sec.org/2026/program.php)<br>
 **Umakant Kulkarni**, Kevin Di Lallo, Chonggang Wang, Robert Gazda, Sonia Fahmy.    
 Proc. of EI Workshop at ACM/IEEE Symposium on Edge Computing (SEC '26), 8pp., October 2026.
 
-[Elastic and Energy-Efficient Management of Mobile Core Control Plane with In-Process WASM Workers](https://scholar.google.com/citations?hl=en&user=1v3d0A0AAAAJ)    
+[Elastic and Energy-Efficient Management of Mobile Core Control Plane with In-Process WASM Workers](https://cnsm-conf.org/2026/program.html)<br>
 Masayuki Kurata, Kyoshiro Muramatsu, **Umakant Kulkarni**, Van Quan Pham, Ahan Kak, Nakjung Choi, Masaki Suzuki.    
 IEEE International Conference on Network and Service Management (CNSM), 9 pp., October 2026.
 

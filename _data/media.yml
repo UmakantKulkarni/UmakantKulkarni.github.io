@@ -1,4 +1,7 @@
+# Newest dated entries first; undated items follow. Full source titles are retained.
 - title: "Maestro: Breaking the WiFi Status Quo with AI-Powered Quality of Experience Management"
+  display_title: "Maestro: AI-Powered Wi-Fi QoE"
+  sort_key: "2025-08-18"
   publisher: HPE Labs
   date: "2025-08-18"
   date_label: August 18, 2025
@@ -9,6 +12,8 @@
   excerpt: "Much of Maestro’s research was shaped by Umakant Kulkarni, a Ph.D. student from Purdue University who started the project during his internship at HPE Labs."
 
 - title: "Securing 5G for Military Operations: Purdue is part of NSF’s Convergence Accelerator Track G award, Phase II"
+  display_title: "Securing 5G for Military Operations"
+  sort_key: "2023-10-30"
   publisher: Purdue Computer Science
   date: "2023-10-30"
   date_label: October 30, 2023
@@ -19,6 +24,8 @@
   excerpt: "Professor Sonia Fahmy and PhD student Umakant Kulkarni presented research related to ZTX at the 20th USENIX Symposium on Networked Systems Design and Implementation (NSDI ‘23)."
 
 - title: Hewlett Packard Labs interns win again
+  display_title: "HPE Labs Internship Awards"
+  sort_key: "2022-09-27"
   publisher: HPE Labs
   date: "2022-09-27"
   date_label: September 27, 2022
@@ -27,3 +34,42 @@
   image_alt: Research group photograph featured in the HPE Labs internship awards article
   image_credit: HPE Labs
   excerpt: "Kulkarni’s project focuses on improving the quality of internet media traffic for end-users over WiFi."
+
+- id: kcd-chennai-2025
+  display_title: "Rethinking Cloud-Native Security"
+  sort_key: "2025"
+  type: Speaker announcement
+  title: "Rethinking Cloud-Native Security: A Stateless, High-Performance Solution"
+  publisher: Kubernetes Community Days Chennai
+  image: /images/media/kcd-chennai-2025.jpg
+  image_alt: KCD Chennai 2025 session announcement featuring Umakant Kulkarni
+  image_credit: Kubernetes Community Days Chennai
+  image_fit: contain
+  image_width: 1200
+  image_height: 1200
+  date_label: "2025"
+  url: https://www.linkedin.com/posts/kcdchennai_kubernetes-kcdchennai2025-activity-7316044787218796545-85dZ
+  description: "KCD Chennai announced my session on ZTX-SEM, a stateless security microservice for cloud-native applications."
+  action_label: View speaker announcement
+  related_links:
+    - label: Watch speaker preview
+      url: https://www.linkedin.com/posts/kubernetes-kcdchennai2025-ugcPost-7317182469399580672-tx7h/
+
+- id: ztx-sem
+  display_title: "ZTX-SEM at Zero Trust X"
+  sort_key: ""
+  type: Technology feature
+  title: ZTX-SEM in the Zero Trust X 5G Core Security Technology Portfolio
+  publisher: Zero Trust X, Technology
+  image: /images/media/ztx-sem.jpg
+  image_alt: ZTX 5G Core deployment management interface featured in the technology portfolio
+  image_credit: Zero Trust X
+  image_fit: contain
+  image_width: 1688
+  image_height: 938
+  url: https://0trustx.com/technology/#core
+  description: "Zero Trust X features ZTX-SEM, the security enforcement microservice from my coauthored research on the cloud-native 5G control plane."
+  action_label: View technology feature
+  related_links:
+    - label: "Research paper: Securing the Cloud-Native 5G Control Plane"
+      url: https://ieeexplore.ieee.org/abstract/document/10774032

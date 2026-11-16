@@ -1,0 +1,54 @@
+# Newest dated entries first; undated items follow. Full source titles are retained.
+- title: "Janus: A Dual-Mask Attention Transformer for Log-based Anomaly Detection in Cellular Networks"
+  display_title: "Janus: Cellular Anomaly Detection"
+  sort_key: "2026"
+  publisher: Association for Computing Machinery (ACM)
+  date_label: "2026"
+  type: Research presentation
+  url: https://www.youtube.com/watch?v=vwt458zZu8Y
+  image: /images/talks/janus-video-thumbnail.jpg
+  image_alt: Title slide for my Janus presentation on anomaly detection in cellular networks
+  image_credit: Umakant Kulkarni and Sonia Fahmy
+  image_fit: contain
+  image_width: 2880
+  image_height: 1620
+  description: "My presentation of Janus, a dual-mask transformer for detecting anomalies in 5G network-function logs."
+  action_label: Watch presentation
+  related_links:
+    - label: Read the Janus paper
+      url: https://doi.org/10.1145/3788096
+
+- title: "Rethinking Cloud-Native Security: A Stateless, High-Performance Solution"
+  display_title: "Rethinking Cloud-Native Security"
+  sort_key: "2025"
+  publisher: Kubernetes Community Days Chennai
+  date_label: "2025"
+  type: Speaker preview
+  url: https://www.linkedin.com/posts/kubernetes-kcdchennai2025-ugcPost-7317182469399580672-tx7h/
+  image: /images/talks/kcd-chennai-preview.png
+  image_alt: KCD Chennai speaker preview featuring Umakant Kulkarni introducing his cloud-native security session
+  image_credit: Kubernetes Community Days Chennai
+  image_fit: contain
+  image_width: 720
+  image_height: 1280
+  description: "A preview of my KCD Chennai session on ZTX-SEM, a stateless security microservice for cloud-native applications."
+  action_label: Watch speaker preview
+
+- title: The Cost of Stateless Network Functions in 5G
+  display_title: "Stateless 5G Network Functions"
+  sort_key: "2021"
+  publisher: ACM/IEEE ANCS
+  date_label: "2021"
+  type: Research presentation
+  url: https://dl.acm.org/doi/suppl/10.1145/3493425.3502749/suppl_file/ancs-s04_p01-kulkarni.mp4
+  image: /images/talks/statelessness-video-thumbnail.jpg
+  image_alt: Title slide for my ANCS presentation on the cost of stateless network functions in 5G
+  image_credit: Umakant Kulkarni, Amit Sheoran, and Sonia Fahmy
+  image_fit: contain
+  image_width: 2596
+  image_height: 1542
+  description: "My ANCS presentation on the latency costs of stateless 5G functions and optimizations for state sharing and database access."
+  action_label: View presentation
+  related_links:
+    - label: Read the ANCS paper
+      url: https://doi.org/10.1145/3493425.3502749
