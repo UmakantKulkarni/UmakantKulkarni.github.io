@@ -25,7 +25,7 @@
   min-width: 0;
 }
 
-.media-card__preview a {
+.media-card__preview > a {
   display: block;
 }
 

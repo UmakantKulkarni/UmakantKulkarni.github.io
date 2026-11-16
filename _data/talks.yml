@@ -9,10 +9,12 @@
   image: /images/talks/janus-video-thumbnail.jpg
   image_alt: Title slide for my Janus presentation on anomaly detection in cellular networks
   image_credit: Umakant Kulkarni and Sonia Fahmy
+  image_source: YouTube
   image_fit: contain
   image_width: 2880
   image_height: 1620
-  description: "My presentation of Janus, a dual-mask transformer for detecting anomalies in 5G network-function logs."
+  excerpt: "Janus: A Dual-Mask Attention Transformer for Log-based Anomaly Detection in Cellular Networks"
+  excerpt_label: ACM video title
   action_label: Watch presentation
   related_links:
     - label: Read the Janus paper
@@ -28,10 +30,12 @@
   image: /images/talks/kcd-chennai-preview.png
   image_alt: KCD Chennai speaker preview featuring Umakant Kulkarni introducing his cloud-native security session
   image_credit: Kubernetes Community Days Chennai
+  image_source: LinkedIn
   image_fit: contain
   image_width: 720
   image_height: 1280
-  description: "A preview of my KCD Chennai session on ZTX-SEM, a stateless security microservice for cloud-native applications."
+  excerpt: "Hear from Umakant Kulkarni as he challenges conventional cloud-native security paradigms in his talk: \"Rethinking Cloud-Native Security: A Stateless, High-Performance Solution\""
+  highlight: Umakant Kulkarni
   action_label: Watch speaker preview
 
 - title: The Cost of Stateless Network Functions in 5G
@@ -44,10 +48,13 @@
   image: /images/talks/statelessness-video-thumbnail.jpg
   image_alt: Title slide for my ANCS presentation on the cost of stateless network functions in 5G
   image_credit: Umakant Kulkarni, Amit Sheoran, and Sonia Fahmy
+  image_source: ACM
   image_fit: contain
   image_width: 2596
   image_height: 1542
-  description: "My ANCS presentation on the latency costs of stateless 5G functions and optimizations for state sharing and database access."
+  excerpt: "In this work, we take the first steps towards quantifying the cost of statelessness in a cloud-native 5G system."
+  excerpt_url: https://dl.acm.org/doi/abs/10.1145/3493425.3502749
+  excerpt_label: ACM abstract
   action_label: View presentation
   related_links:
     - label: Read the ANCS paper
