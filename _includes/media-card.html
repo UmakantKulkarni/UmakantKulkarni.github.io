@@ -5,7 +5,11 @@
     <a href="{{ item.url }}" tabindex="-1" aria-hidden="true"{% if include.video %} target="_blank" rel="noopener noreferrer"{% endif %}>
       <img src="{% unless item.image contains '://' %}{{ base_path }}{% endunless %}{{ item.image }}" alt="{{ item.image_alt | escape }}" width="{{ item.image_width | default: 640 }}" height="{{ item.image_height | default: 420 }}"{% if item.image_fit == "contain" %} class="media-card__image--contain"{% endif %} loading="lazy">
     </a>
-    {% if item.image_credit %}<figcaption>Image: {{ item.image_credit | escape }}</figcaption>{% endif %}
+    {% if item.image_source %}
+    {% assign source_parts = item.url | split: "/" %}
+    {% assign source_domain = source_parts[2] | remove_first: "www." %}
+    <figcaption>Source: {{ item.image_source | escape }} · <a href="{{ item.url }}"{% if include.video %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ source_domain | escape }}</a></figcaption>
+    {% elsif item.image_credit %}<figcaption>Image: {{ item.image_credit | escape }}</figcaption>{% endif %}
   </figure>
   {% else %}
   <div class="media-card__preview media-card__preview--empty" aria-hidden="true"></div>
@@ -19,9 +23,15 @@
     </div>
     <h2 id="{{ include.card_id }}-title"><a href="{{ item.url }}"{% if include.video %} target="_blank" rel="noopener noreferrer"{% endif %} title="{{ item.title | escape }}">{{ item.display_title | default: item.title | escape }}</a></h2>
     {% if item.excerpt %}
-    <blockquote cite="{{ item.url }}">
-      <p>“{{ item.excerpt }}”</p>
-      <cite>{{ item.publisher }}</cite>
+    {% assign quote = item.excerpt | escape %}
+    {% if item.highlight %}
+      {% assign highlight = item.highlight | escape %}
+      {% assign emphasized = highlight | prepend: "<strong>" | append: "</strong>" %}
+      {% assign quote = quote | replace: highlight, emphasized %}
+    {% endif %}
+    <blockquote cite="{{ item.excerpt_url | default: item.url }}">
+      <p>“{{ quote }}”</p>
+      <cite>{{ item.excerpt_label | default: item.publisher | escape }}</cite>
     </blockquote>
     {% else %}
     <p class="media-card__highlight">{{ item.description | escape }}</p>
