@@ -26,7 +26,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : '<p style="margin:-3px 0 0 10px; display:inline-block; text-align:center;">Senior Staff Researcher<br/>at Palo Alto Networks</p>'
   location         : "Santa Clara, CA"
-  employer         : "Palo Alto Networks"
+  employer         : # "Palo Alto Networks"
   uri              : # URL
   email            : "ukulkarni at paloaltonetworks dot com" 
 
