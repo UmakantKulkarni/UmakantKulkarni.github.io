@@ -6,6 +6,12 @@
   date_label: "2026"
   type: Research presentation
   url: https://www.youtube.com/watch?v=vwt458zZu8Y
+  image: /images/talks/janus-video-thumbnail.jpg
+  image_alt: Title slide for my Janus presentation on anomaly detection in cellular networks
+  image_credit: Umakant Kulkarni and Sonia Fahmy
+  image_fit: contain
+  image_width: 2880
+  image_height: 1620
   description: "My presentation of Janus, a dual-mask transformer for detecting anomalies in 5G network-function logs."
   action_label: Watch presentation
   related_links:
@@ -35,6 +41,12 @@
   date_label: "2021"
   type: Research presentation
   url: https://dl.acm.org/doi/suppl/10.1145/3493425.3502749/suppl_file/ancs-s04_p01-kulkarni.mp4
+  image: /images/talks/statelessness-video-thumbnail.jpg
+  image_alt: Title slide for my ANCS presentation on the cost of stateless network functions in 5G
+  image_credit: Umakant Kulkarni, Amit Sheoran, and Sonia Fahmy
+  image_fit: contain
+  image_width: 2596
+  image_height: 1542
   description: "My ANCS presentation on the latency costs of stateless 5G functions and optimizations for state sharing and database access."
   action_label: View presentation
   related_links:
