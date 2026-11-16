@@ -15,7 +15,7 @@
   image_height: 1620
   excerpt: "Janus: A Dual-Mask Attention Transformer for Log-based Anomaly Detection in Cellular Networks"
   excerpt_label: ACM video title
-  action_label: Watch presentation
+  action_label: Watch video
   related_links:
     - label: Read the Janus paper
       url: https://doi.org/10.1145/3788096
@@ -55,7 +55,7 @@
   excerpt: "In this work, we take the first steps towards quantifying the cost of statelessness in a cloud-native 5G system."
   excerpt_url: https://dl.acm.org/doi/abs/10.1145/3493425.3502749
   excerpt_label: ACM abstract
-  action_label: View presentation
+  action_label: Watch video
   related_links:
     - label: Read the ANCS paper
       url: https://doi.org/10.1145/3493425.3502749
