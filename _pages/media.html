@@ -3,35 +3,65 @@ layout: single
 title: "Media"
 permalink: /media/
 author_profile: true
-excerpt: "Selected coverage of Umakant Kulkarni’s research and recognition."
+excerpt: "Institutional coverage, speaking announcements, and context for Umakant Kulkarni’s research."
 ---
 
 {% include base_path %}
 <link rel="stylesheet" href="{{ base_path }}/assets/css/media.css">
 
-<p class="media-intro">Selected coverage of my research and recognition, from Wi-Fi quality of experience to secure 5G networks.</p>
+<p class="media-intro">Selected coverage and speaking announcements, followed by technology features and research collaboration context.</p>
 
-<div class="media-list">
-  {% for item in site.data.media %}
-  <article class="media-card" aria-labelledby="media-title-{{ forloop.index }}">
-    <figure class="media-card__preview">
-      <a href="{{ item.url }}" tabindex="-1" aria-hidden="true">
-        <img src="{{ base_path }}{{ item.image }}" alt="{{ item.image_alt }}" width="640" height="420" loading="lazy">
-      </a>
-      <figcaption>Image: {{ item.image_credit }}</figcaption>
-    </figure>
-    <div class="media-card__body">
-      <div class="media-card__meta">
-        <span class="media-card__publisher">{{ item.publisher }}</span>
-        <time datetime="{{ item.date }}">{{ item.date_label }}</time>
+{% assign groups = "coverage,context" | split: "," %}
+{% for group in groups %}
+<section aria-labelledby="media-group-{{ group }}">
+  {% if group == "coverage" %}
+  <h2 id="media-group-{{ group }}">Coverage and Speaking</h2>
+  {% else %}
+  <h2 id="media-group-{{ group }}">Research and Industry Context</h2>
+  <p class="media-intro">References to research technology and university funding, with related papers that establish my contribution.</p>
+  {% endif %}
+  <div class="media-list">
+    {% for item in site.data.media %}
+    {% assign category = item.category | default: "coverage" %}
+    {% if category != group %}{% continue %}{% endif %}
+    {% assign item_id = item.id | default: forloop.index %}
+    <article id="{{ item_id }}" class="media-card{% unless item.image %} media-card--image-less{% endunless %}" aria-labelledby="media-title-{{ item_id }}">
+      {% if item.image %}
+      <figure class="media-card__preview">
+        <a href="{{ item.url }}" tabindex="-1" aria-hidden="true">
+          <img src="{{ base_path }}{{ item.image }}" alt="{{ item.image_alt }}" width="640" height="420" loading="lazy">
+        </a>
+        <figcaption>Image: {{ item.image_credit }}</figcaption>
+      </figure>
+      {% endif %}
+      <div class="media-card__body">
+        <div class="media-card__meta">
+          <span class="media-card__publisher">{{ item.publisher | escape }}</span>
+          <span>{{ item.type | default: "Institutional coverage" | escape }}</span>
+          {% if item.date %}
+          <time datetime="{{ item.date }}">{{ item.date_label }}</time>
+          {% elsif item.date_label %}<span>{{ item.date_label }}</span>{% endif %}
+        </div>
+        <h3 id="media-title-{{ item_id }}"><a href="{{ item.url }}">{{ item.title | escape }}</a></h3>
+        {% if item.excerpt %}
+        <blockquote cite="{{ item.url }}">
+          <p>“{{ item.excerpt }}”</p>
+          <cite>{{ item.publisher }}</cite>
+        </blockquote>
+        {% else %}
+        <p class="media-card__description">{{ item.description | escape }}</p>
+        {% endif %}
+        <a class="media-card__read" href="{{ item.url }}" aria-label="{{ item.action_label | default: 'Read article' | escape }}: {{ item.title | escape }}">{{ item.action_label | default: "Read article" }} <svg aria-hidden="true" width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12 12 4M4 4h8v8"/></svg></a>
+        {% if item.related_links %}
+        <ul class="media-card__related">
+          {% for link in item.related_links %}
+          <li><a href="{{ link.url }}">{{ link.label | escape }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
       </div>
-      <h2 id="media-title-{{ forloop.index }}"><a href="{{ item.url }}">{{ item.title }}</a></h2>
-      <blockquote cite="{{ item.url }}">
-        <p>“{{ item.excerpt }}”</p>
-        <cite>{{ item.publisher }}</cite>
-      </blockquote>
-      <a class="media-card__read" href="{{ item.url }}" aria-label="Read article: {{ item.title | escape }}">Read article <svg aria-hidden="true" width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12 12 4M4 4h8v8"/></svg></a>
-    </div>
-  </article>
-  {% endfor %}
-</div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}

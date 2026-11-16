@@ -1,16 +1,35 @@
 ---
-layout: archive
-title: "Talks and presentations"
+layout: single
+title: "Talks"
 permalink: /talks/
 author_profile: true
+excerpt: "Selected recordings and video previews of Umakant Kulkarni’s research presentations."
 ---
 
-{% if site.talkmap_link == true %}
+{% include base_path %}
+<link rel="stylesheet" href="{{ base_path }}/assets/css/talks.css">
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<p class="talks-intro">Selected recordings and video previews of my research presentations on network security, cloud-native systems, and networking.</p>
 
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+<div class="talks-grid">
+  {% assign talks = site.data.talks | sort: "year" | reverse %}
+  {% for talk in talks %}
+  <article class="talk-card" aria-labelledby="talk-title-{{ forloop.index }}">
+    <a class="talk-thumbnail" href="{{ talk.url }}" target="_blank" rel="noopener noreferrer" aria-label="Watch {{ talk.type | downcase }}: {{ talk.title | escape }} (opens in a new tab)">
+      <span class="talk-thumbnail__host">{{ talk.host | escape }} · {{ talk.year }}</span>
+      <span class="talk-thumbnail__title">{{ talk.poster_label | escape }}</span>
+      <span class="talk-thumbnail__play" aria-hidden="true">▶</span>
+      <span class="talk-thumbnail__type">{{ talk.type | escape }}</span>
+    </a>
+    <div class="talk-card__body">
+      <p class="talk-card__meta">{{ talk.type | escape }} · {{ talk.host | escape }} · {{ talk.year }}</p>
+      <h2 id="talk-title-{{ forloop.index }}"><a href="{{ talk.url }}" target="_blank" rel="noopener noreferrer">{{ talk.title | escape }}</a></h2>
+      <p>{{ talk.description | escape }}</p>
+      <a class="talk-card__watch" href="{{ talk.url }}" target="_blank" rel="noopener noreferrer">Watch {{ talk.type | downcase }} <span class="visually-hidden">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+      {% if talk.related_url %}
+      <p class="talk-card__related"><a href="{{ talk.related_url }}" target="_blank" rel="noopener noreferrer">{{ talk.related_label | escape }}</a></p>
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>

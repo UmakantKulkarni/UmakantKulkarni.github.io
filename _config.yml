@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Homepage"
+title                    : "Umakant Kulkarni"
 title_separator          : "-"
 name                     : &name "Umakant Kulkarni"
-description              : &description "personal description"
+description              : &description "Research in network security, protocol analysis, AI/ML, and cloud-native networked systems."
 url                      : https://umakantkulkarni.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "UmakantKulkarni/UmakantKulkarni.github.io"
