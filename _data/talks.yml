@@ -1,10 +1,23 @@
-# Only recordings verified from the original host belong in this gallery.
+# Images will be added from the owner's supplied thumbnails.
 - title: "Rethinking Cloud-Native Security: A Stateless, High-Performance Solution"
-  host: Kubernetes Community Days Chennai
-  year: 2025
+  publisher: Kubernetes Community Days Chennai
+  date_label: "2025"
   type: Speaker preview
-  poster_label: Cloud-Native Security
   url: https://www.linkedin.com/posts/kubernetes-kcdchennai2025-ugcPost-7317182469399580672-tx7h/
   description: "A short introduction to my KCD Chennai session on ZTX-SEM, a stateless, protocol-agnostic security enforcement microservice for cloud-native applications, with a 5G control-plane use case."
-  related_url: https://www.linkedin.com/posts/kcdchennai_kubernetes-kcdchennai2025-activity-7316044787218796545-85dZ
-  related_label: Organizer's session announcement
+  action_label: Watch speaker preview
+
+- title: The Cost of Stateless Network Functions in 5G
+  publisher: ACM/IEEE ANCS
+  date_label: "2021"
+  type: Research presentation
+  url: https://dl.acm.org/doi/suppl/10.1145/3493425.3502749/suppl_file/ancs-s04_p01-kulkarni.mp4
+  description: "Presentation of research on the performance costs of stateless network functions in a 5G core, including external state management and database operations."
+  action_label: View presentation
+
+# Use a neutral label until the owner supplies the video's exact title and details.
+- title: Research talk
+  publisher: YouTube
+  url: https://www.youtube.com/watch?v=vwt458zZu8Y
+  description: "A research video shared by Umakant Kulkarni."
+  action_label: Watch video

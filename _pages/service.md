@@ -21,9 +21,7 @@ I review for scholarly journals and serve on conference technical program, artif
 - [ACM SIGCOMM 2025](https://conferences.sigcomm.org/sigcomm/2025/cf-artifacts/) - Artifact Evaluation Committee
 - [ACM IMC 2025](https://imc25stpc.hotcrp.com/users/pc) - Shadow Technical Program Committee ([about the Shadow TPC](https://conferences.sigcomm.org/imc/2025/shadow-tpc/))
 
-## Conference Organization and Volunteering
-
-- [ACM SIGCOMM 2021](https://conferences.sigcomm.org/sigcomm/2021/org-committee.html) - Student Volunteer (Organizing Committee roster)
+- [ACM SIGCOMM 2021](https://conferences.sigcomm.org/sigcomm/2021/org-committee.html) - Organizing Committee (volunteer)
 
 ## Journals
 

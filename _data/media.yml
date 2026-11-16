@@ -29,7 +29,6 @@
   excerpt: "Kulkarni’s project focuses on improving the quality of internet media traffic for end-users over WiFi."
 
 - id: kcd-chennai-2025
-  category: coverage
   type: Speaker announcement
   title: "Rethinking Cloud-Native Security: A Stateless, High-Performance Solution"
   publisher: Kubernetes Community Days Chennai
@@ -42,29 +41,12 @@
       url: https://www.linkedin.com/posts/kubernetes-kcdchennai2025-ugcPost-7317182469399580672-tx7h/
 
 - id: ztx-sem
-  category: context
   type: Technology feature
   title: ZTX-SEM in the Zero Trust X 5G Core Security Technology Portfolio
   publisher: Zero Trust X, Technology
   url: https://0trustx.com/technology/#core
-  description: "Zero Trust X features ZTX-SEM as a protocol-agnostic security enforcement microservice for cloud-native 5G control-plane networks. ZTX-SEM is the subject of my coauthored research on securing the cloud-native 5G control plane. The portfolio describes the technology; the related paper establishes my authorship."
+  description: "Zero Trust X features ZTX-SEM as a protocol-agnostic security enforcement microservice for cloud-native 5G control-plane networks. ZTX-SEM is the subject of my coauthored research on securing the cloud-native 5G control plane."
   action_label: View technology feature
   related_links:
     - label: "Research paper: Securing the Cloud-Native 5G Control Plane"
       url: https://ieeexplore.ieee.org/abstract/document/10774032
-
-- id: juniper-purdue
-  category: context
-  type: Industry research initiative
-  title: "Juniper Networks University Research Initiative: Purdue Collaboration"
-  publisher: Juniper Networks (archived announcement)
-  date: "2022-03-08"
-  date_label: March 8, 2022
-  url: https://web.archive.org/web/20250419021243/https://newsroom.juniper.net/news/news-details/2022/Juniper-Networks-Announces-University-Research-Funding-Initiative-to-Advance-Artificial-Intelligence-and-Network-Innovation/default.aspx
-  description: "Juniper Networks announced support for next-generation network research at Purdue, including traffic engineering. The announcement names Purdue and Professor Sonia Fahmy. My subsequent 2023 HPSR paper, coauthored with Juniper researcher Patrick Melampy, acknowledges partial support from a Juniper Networks gift."
-  action_label: Read research initiative announcement
-  related_links:
-    - label: "Related paper: Toward QoE-based Routing Path Selection"
-      url: https://www.cs.purdue.edu/homes/fahmy/papers/2023HPSR.pdf
-    - label: Same announcement on Nasdaq
-      url: https://www.nasdaq.com/press-release/juniper-networks-announces-university-research-funding-initiative-to-advance
