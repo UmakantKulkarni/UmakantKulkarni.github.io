@@ -32,9 +32,15 @@
   type: Speaker announcement
   title: "Rethinking Cloud-Native Security: A Stateless, High-Performance Solution"
   publisher: Kubernetes Community Days Chennai
+  image: /images/media/kcd-chennai-2025.jpg
+  image_alt: KCD Chennai 2025 session announcement featuring Umakant Kulkarni
+  image_credit: Kubernetes Community Days Chennai
+  image_fit: contain
+  image_width: 1200
+  image_height: 1200
   date_label: "2025"
   url: https://www.linkedin.com/posts/kcdchennai_kubernetes-kcdchennai2025-activity-7316044787218796545-85dZ
-  description: "Kubernetes Community Days Chennai announced my 2025 technical session on ZTX-SEM, a stateless, protocol-agnostic security enforcement mechanism for cloud-native network functions."
+  description: "Kubernetes Community Days Chennai announced my session on ZTX-SEM, a stateless security enforcement microservice for cloud-native applications across TCP, UDP, and SCTP, with a 5G control-plane use case."
   action_label: View speaker announcement
   related_links:
     - label: Watch speaker preview
@@ -44,6 +50,12 @@
   type: Technology feature
   title: ZTX-SEM in the Zero Trust X 5G Core Security Technology Portfolio
   publisher: Zero Trust X, Technology
+  image: /images/media/ztx-sem.jpg
+  image_alt: ZTX 5G Core deployment management interface featured in the technology portfolio
+  image_credit: Zero Trust X
+  image_fit: contain
+  image_width: 1688
+  image_height: 938
   url: https://0trustx.com/technology/#core
   description: "Zero Trust X features ZTX-SEM as a protocol-agnostic security enforcement microservice for cloud-native 5G control-plane networks. ZTX-SEM is the subject of my coauthored research on securing the cloud-native 5G control plane."
   action_label: View technology feature

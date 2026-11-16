@@ -3,7 +3,7 @@
   {% if item.image %}
   <figure class="media-card__preview">
     <a href="{{ item.url }}" tabindex="-1" aria-hidden="true"{% if include.video %} target="_blank" rel="noopener noreferrer"{% endif %}>
-      <img src="{% unless item.image contains '://' %}{{ base_path }}{% endunless %}{{ item.image }}" alt="{{ item.image_alt | escape }}" width="640" height="420" loading="lazy">
+      <img src="{% unless item.image contains '://' %}{{ base_path }}{% endunless %}{{ item.image }}" alt="{{ item.image_alt | escape }}" width="{{ item.image_width | default: 640 }}" height="{{ item.image_height | default: 420 }}"{% if item.image_fit == "contain" %} class="media-card__image--contain"{% endif %} loading="lazy">
     </a>
     {% if item.image_credit %}<figcaption>Image: {{ item.image_credit | escape }}</figcaption>{% endif %}
   </figure>

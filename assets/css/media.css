@@ -132,3 +132,5 @@ html[data-theme="dark"] .media-card__read {
 .page__content .media-card__related { margin: 0.8rem 0 0; font-size: 0.75rem; }
 .media-card[id] { scroll-margin-top: 5rem; }
 @media (max-width: 640px) { .media-card__preview--empty { display: none; } }
+
+.media-card__preview img.media-card__image--contain { object-fit: contain; }

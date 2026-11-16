@@ -1,10 +1,26 @@
-# Images will be added from the owner's supplied thumbnails.
+- title: "Janus: A Dual-Mask Attention Transformer for Log-based Anomaly Detection in Cellular Networks"
+  publisher: Association for Computing Machinery (ACM)
+  date_label: "2026"
+  type: Research presentation
+  url: https://www.youtube.com/watch?v=vwt458zZu8Y
+  description: "Presentation of Janus, a dual-mask attention transformer that models procedural dependencies and semantic consistency in cellular network-function logs to detect anomalies in 5G control-plane workflows."
+  action_label: Watch presentation
+  related_links:
+    - label: Read the Janus paper
+      url: https://doi.org/10.1145/3788096
+
 - title: "Rethinking Cloud-Native Security: A Stateless, High-Performance Solution"
   publisher: Kubernetes Community Days Chennai
   date_label: "2025"
   type: Speaker preview
   url: https://www.linkedin.com/posts/kubernetes-kcdchennai2025-ugcPost-7317182469399580672-tx7h/
-  description: "A short introduction to my KCD Chennai session on ZTX-SEM, a stateless, protocol-agnostic security enforcement microservice for cloud-native applications, with a 5G control-plane use case."
+  image: /images/talks/kcd-chennai-preview.png
+  image_alt: KCD Chennai speaker preview featuring Umakant Kulkarni introducing his cloud-native security session
+  image_credit: Kubernetes Community Days Chennai
+  image_fit: contain
+  image_width: 720
+  image_height: 1280
+  description: "A short preview of my session introducing ZTX-SEM, a stateless, protocol-agnostic security enforcement microservice for cloud-native applications across TCP, UDP, and SCTP."
   action_label: Watch speaker preview
 
 - title: The Cost of Stateless Network Functions in 5G
@@ -12,12 +28,8 @@
   date_label: "2021"
   type: Research presentation
   url: https://dl.acm.org/doi/suppl/10.1145/3493425.3502749/suppl_file/ancs-s04_p01-kulkarni.mp4
-  description: "Presentation of research on the performance costs of stateless network functions in a 5G core, including external state management and database operations."
+  description: "Presentation of research quantifying serialization, deserialization, and database-interaction costs in stateless 5G network functions, and evaluating state-sharing and database-access optimizations."
   action_label: View presentation
-
-# Use a neutral label until the owner supplies the video's exact title and details.
-- title: Research talk
-  publisher: YouTube
-  url: https://www.youtube.com/watch?v=vwt458zZu8Y
-  description: "A research video shared by Umakant Kulkarni."
-  action_label: Watch video
+  related_links:
+    - label: Read the ANCS paper
+      url: https://doi.org/10.1145/3493425.3502749
