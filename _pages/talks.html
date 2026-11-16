@@ -3,16 +3,17 @@ layout: single
 title: "Talks"
 permalink: /talks/
 author_profile: true
-excerpt: "Selected research presentations and video previews shared by Umakant Kulkarni."
+excerpt: "My research talks and video previews."
 ---
 
 {% include base_path %}
 <link rel="stylesheet" href="{{ base_path }}/assets/css/media.css">
 
-<p class="media-intro">Selected research presentations and video previews on network security, cloud-native systems, and networking.</p>
+<p class="media-intro">Selected talks and video previews.</p>
 
 <div class="media-list">
-  {% for item in site.data.talks %}
+  {% assign items = site.data.talks | sort: "sort_key" | reverse %}
+  {% for item in items %}
   {% assign card_id = forloop.index | prepend: "talk-" %}
   {% include media-card.html item=item card_id=card_id video=true %}
   {% endfor %}

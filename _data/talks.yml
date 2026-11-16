@@ -1,15 +1,20 @@
+# Newest dated entries first; undated items follow. Full source titles are retained.
 - title: "Janus: A Dual-Mask Attention Transformer for Log-based Anomaly Detection in Cellular Networks"
+  display_title: "Janus: Cellular Anomaly Detection"
+  sort_key: "2026"
   publisher: Association for Computing Machinery (ACM)
   date_label: "2026"
   type: Research presentation
   url: https://www.youtube.com/watch?v=vwt458zZu8Y
-  description: "Presentation of Janus, a dual-mask attention transformer that models procedural dependencies and semantic consistency in cellular network-function logs to detect anomalies in 5G control-plane workflows."
+  description: "My presentation of Janus, a dual-mask transformer for detecting anomalies in 5G network-function logs."
   action_label: Watch presentation
   related_links:
     - label: Read the Janus paper
       url: https://doi.org/10.1145/3788096
 
 - title: "Rethinking Cloud-Native Security: A Stateless, High-Performance Solution"
+  display_title: "Rethinking Cloud-Native Security"
+  sort_key: "2025"
   publisher: Kubernetes Community Days Chennai
   date_label: "2025"
   type: Speaker preview
@@ -20,15 +25,17 @@
   image_fit: contain
   image_width: 720
   image_height: 1280
-  description: "A short preview of my session introducing ZTX-SEM, a stateless, protocol-agnostic security enforcement microservice for cloud-native applications across TCP, UDP, and SCTP."
+  description: "A preview of my KCD Chennai session on ZTX-SEM, a stateless security microservice for cloud-native applications."
   action_label: Watch speaker preview
 
 - title: The Cost of Stateless Network Functions in 5G
+  display_title: "Stateless 5G Network Functions"
+  sort_key: "2021"
   publisher: ACM/IEEE ANCS
   date_label: "2021"
   type: Research presentation
   url: https://dl.acm.org/doi/suppl/10.1145/3493425.3502749/suppl_file/ancs-s04_p01-kulkarni.mp4
-  description: "Presentation of research quantifying serialization, deserialization, and database-interaction costs in stateless 5G network functions, and evaluating state-sharing and database-access optimizations."
+  description: "My ANCS presentation on the latency costs of stateless 5G functions and optimizations for state sharing and database access."
   action_label: View presentation
   related_links:
     - label: Read the ANCS paper

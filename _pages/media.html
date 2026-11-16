@@ -3,16 +3,17 @@ layout: single
 title: "Media"
 permalink: /media/
 author_profile: true
-excerpt: "Selected coverage, speaking announcements, and technology features related to Umakant Kulkarni’s research."
+excerpt: "Research and recognition."
 ---
 
 {% include base_path %}
 <link rel="stylesheet" href="{{ base_path }}/assets/css/media.css">
 
-<p class="media-intro">Selected coverage, speaking announcements, and technology features related to my research.</p>
+<p class="media-intro">Selected research and recognition.</p>
 
 <div class="media-list">
-  {% for item in site.data.media %}
+  {% assign items = site.data.media | sort: "sort_key" | reverse %}
+  {% for item in items %}
   {% assign card_id = item.id | default: forloop.index | prepend: "media-" %}
   {% include media-card.html item=item card_id=card_id %}
   {% endfor %}

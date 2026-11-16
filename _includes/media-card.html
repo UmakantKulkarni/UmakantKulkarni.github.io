@@ -17,7 +17,7 @@
       {% if item.date %}<time datetime="{{ item.date }}">{{ item.date_label }}</time>
       {% elsif item.date_label %}<span>{{ item.date_label }}</span>{% endif %}
     </div>
-    <h2 id="{{ include.card_id }}-title"><a href="{{ item.url }}"{% if include.video %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.title | escape }}</a></h2>
+    <h2 id="{{ include.card_id }}-title"><a href="{{ item.url }}"{% if include.video %} target="_blank" rel="noopener noreferrer"{% endif %} title="{{ item.title | escape }}">{{ item.display_title | default: item.title | escape }}</a></h2>
     {% if item.excerpt %}
     <blockquote cite="{{ item.url }}">
       <p>“{{ item.excerpt }}”</p>
